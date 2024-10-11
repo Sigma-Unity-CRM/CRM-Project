@@ -13,7 +13,6 @@ Unity CRM aims to revolutionize how SMBs interact with their customers by provid
 - 📱 **Social Channel Integration**: Manage customer conversations from WhatsApp, Instagram, and Facebook Messenger in one place.
 - 🤖 **AI-Powered Insights**: Utilize AI algorithms to analyze customer data and provide actionable insights for improving sales strategies.
 - ♿ **Accessibility Focused**: Designed with visually impaired business owners in mind, ensuring that our platform is usable by everyone.
-- 🌎 **Multilingual Support**: Catering to Hispanic markets.
 
 ### 🛠️ Technology Stack
 
