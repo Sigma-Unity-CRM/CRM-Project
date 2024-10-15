@@ -4,11 +4,11 @@ steps = [
         """--sql
         CREATE TABLE users (
             user_id SERIAL PRIMARY KEY,
-            username VARCHAR NOT NULL UNIQUE,
-            email VARCHAR NOT NULL UNIQUE,
-            hashed_password VARCHAR NOT NULL,
-            first_name VARCHAR,
-            last_name VARCHAR
+            username VARCHAR(50) NOT NULL UNIQUE,
+            email VARCHAR(256) NOT NULL UNIQUE,
+            hashed_password VARCHAR(256) NOT NULL,
+            first_name VARCHAR(100),
+            last_name VARCHAR(100)
         );
         """,
         # "Down" SQL statement for users

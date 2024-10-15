@@ -6,7 +6,7 @@ steps = [
             activity_id SERIAL PRIMARY KEY,
             activity_type_id INTEGER NOT NULL REFERENCES activity_types(activity_type_id),
             opportunity_id INTEGER REFERENCES opportunities(opportunity_id),
-            description VARCHAR,
+            description VARCHAR(255),
             due_date DATE,
             completed BOOLEAN DEFAULT FALSE
         );

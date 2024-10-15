@@ -4,7 +4,7 @@ steps = [
         """--sql
         CREATE TABLE countries (
             country_id SERIAL PRIMARY KEY,
-            country_name VARCHAR NOT NULL,
+            country_name VARCHAR(100) NOT NULL,
             country_code VARCHAR(3) NOT NULL UNIQUE
         );
         """,
