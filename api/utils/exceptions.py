@@ -63,3 +63,83 @@ class AccountDoesNotExist(Exception):
 
 class AccountCreationError(Exception):
     pass
+
+
+class StageDatabaseError(Exception):
+    pass
+
+
+class StageDoesNotExist(Exception):
+    pass
+
+
+class StageCreationError(Exception):
+    pass
+
+
+class ForecastCategoryDatabaseError(Exception):
+    pass
+
+
+class ForecastCategoryDoesNotExist(Exception):
+    pass
+
+
+class ForecastCategoryCreationError(Exception):
+    pass
+
+
+class ActivityTypeDatabaseError(Exception):
+    pass
+
+
+class ActivityTypeDoesNotExist(Exception):
+    pass
+
+
+class ActivityTypeCreationError(Exception):
+    pass
+
+
+class ActivityDatabaseError(Exception):
+    pass
+
+
+class ActivityDoesNotExist(Exception):
+    pass
+
+
+class ActivityCreationError(Exception):
+    pass
+
+
+class OpportunityContactDatabaseError(Exception):
+    pass
+
+
+class OpportunityContactDoesNotExist(Exception):
+    pass
+
+
+class OpportunityOwnerDatabaseError(Exception):
+    pass
+
+
+class OpportunityOwnerDoesNotExist(Exception):
+    pass
+
+
+class ActivityUserDatabaseError(Exception):
+    pass
+
+
+class ActivityUserDoesNotExist(Exception):
+    pass
+
+
+class ActivityContactDatabaseError(Exception):
+    pass
+
+
+class ActivityContactDoesNotExist(Exception):
+    pass
