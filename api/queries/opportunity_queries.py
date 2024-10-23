@@ -58,7 +58,9 @@ class OpportunityQueries:
                         )
                     return opportunity
         except psycopg.Error as e:
-            print(f"Error retrieving opportunity with id {opportunity_id}: {e}")
+            print(
+                f"Error retrieving opportunity with id {opportunity_id}: {e}",
+            )
             raise OpportunityDatabaseError(
                 f"Error retrieving opportunity with id {opportunity_id}"
             )
@@ -101,7 +103,9 @@ class OpportunityQueries:
                     )
                     new_opportunity = cur.fetchone()
                     if new_opportunity is None:
-                        raise OpportunityCreationError("Error creating opportunity")
+                        raise OpportunityCreationError(
+                            "Error creating opportunity",
+                        )
                     return new_opportunity
 
         except UniqueViolation:
@@ -180,7 +184,7 @@ class OpportunityQueries:
                     updated_opportunity = cur.fetchone()
                     if not updated_opportunity:
                         raise OpportunityDoesNotExist(
-                            f"Opportunity with id {opportunity_id} does not exist."
+                            f"Opportunity id {opportunity_id} does not exist.",
                         )
                     return updated_opportunity
 

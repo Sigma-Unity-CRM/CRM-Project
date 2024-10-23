@@ -39,3 +39,27 @@ class UserDoesNotExist(Exception):
 
 class UserCreationError(Exception):
     pass
+
+
+class ContactDatabaseError(Exception):
+    pass
+
+
+class ContactDoesNotExist(Exception):
+    pass
+
+
+class ContactCreationError(Exception):
+    pass
+
+
+class AccountDatabaseError(Exception):
+    pass
+
+
+class AccountDoesNotExist(Exception):
+    pass
+
+
+class AccountCreationError(Exception):
+    pass

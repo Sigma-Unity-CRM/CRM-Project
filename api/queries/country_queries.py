@@ -50,11 +50,15 @@ class CountryQueries:
                     )
                     country = cur.fetchone()
                     if country is None:
-                        raise CountryDoesNotExist(f"No country with id {country_id}.")
+                        raise CountryDoesNotExist(
+                            f"No country with id {country_id}.",
+                        )
                     return country
         except psycopg.Error as e:
             print(f"Error retrieving country with id {country_id}: {e}")
-            raise CountryDatabaseError(f"Error retrieving country with id {country_id}")
+            raise CountryDatabaseError(
+                f"Error retrieving country with id {country_id}",
+            )
 
     def create_country(self, country: CountryCreate) -> Country:
         try:
@@ -100,7 +104,9 @@ class CountryQueries:
                     return cur.rowcount > 0
         except psycopg.Error as e:
             print(f"Error deleting country with id {country_id}: {e}")
-            raise CountryDatabaseError(f"Error deleting country with id {country_id}")
+            raise CountryDatabaseError(
+                f"Error deleting country with id {country_id}",
+            )
 
     def edit_country(
         self,
@@ -142,7 +148,9 @@ class CountryQueries:
 
         except psycopg.Error as e:
             print(e)
-            raise CountryDatabaseError(f"Could not update country {country_id}")
+            raise CountryDatabaseError(
+                f"Could not update country {country_id}",
+            )
         except ValueError as e:
             print(e)
             raise CountryDatabaseError("No fields provided for update.")
