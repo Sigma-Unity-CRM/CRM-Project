@@ -7,10 +7,9 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 COPY main.py main.py
 
-# Uncomment and modify these lines as you add subdirectories to your project
-# COPY queries queries
-# COPY routers routers
-# COPY migrations migrations
+COPY queries queries
+COPY routers routers
+COPY migrations migrations
 
 RUN python -m pip install -r requirements.txt
 
