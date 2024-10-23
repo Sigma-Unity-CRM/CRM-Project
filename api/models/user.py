@@ -12,6 +12,10 @@ The Response class (no suffix) contains all the data attributes,
 including the PK. It is used when returning the response from the
 API.
 
+from_attributes = True is essentially the updated version of Pydantic
+v1 orm_mode = True. It serves a similar purpose but aims to be more
+explicit in its intent.
+
 The orm_mode = True setting allows FastAPI to convert ORM objects
 to Pydantic models seamlessly. In short, orm_mode = True is a
 convenient way to make Pydantic models compatible with database
